@@ -1,0 +1,923 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Harsh Jaiswar | Aspiring Full Stack Developer & B.Sc. IT Student
+    </title>
+    <meta
+      name="description"
+      content="Portfolio of Harsh Jaiswar - Aspiring Full Stack Developer and B.Sc. Information Technology student. Explore featured projects in Web Development, Data Analytics, and C++ Engineering."
+    />
+    <meta
+      name="keywords"
+      content="Harsh Jaiswar, Full Stack Developer, Data Analyst, B.Sc. IT, Portfolio, Web Developer, Mumbai"
+    />
+    <meta name="author" content="Harsh Jaiswar" />
+
+    <!-- Open Graph / Social Meta -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Harsh Jaiswar | Portfolio" />
+    <meta
+      property="og:description"
+      content="Aspiring Full Stack Developer & B.Sc. IT Student building modern web apps & data solutions."
+    />
+
+    <!-- Google Fonts: Inter & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons for high fidelity iconography -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Toast Notification Container -->
+    <div id="toast" class="toast" role="alert" aria-live="polite">
+      <i class="fa-solid fa-circle-check"></i>
+      <span id="toast-message">Copied to clipboard!</span>
+    </div>
+
+    <!-- Main App Shell -->
+    <div class="app-container">
+      <!-- Top Sticky Header Bar -->
+      <header class="top-nav" id="top-nav">
+        <div class="nav-content">
+          <div class="nav-profile">
+            <div class="avatar-wrapper">
+              <img
+                src="assets/images/avatar.jpg"
+                alt="Harsh Jaiswar"
+                class="avatar-img"
+                id="nav-avatar"
+              />
+              <span class="online-indicator" title="Online"></span>
+            </div>
+            <div class="profile-info">
+              <span class="profile-name">Harsh Jaiswar</span>
+              <span class="profile-meta"
+                ><i class="fa-solid fa-location-dot"></i> Mumbai, India &bull;
+                Open to Relocate</span
+              >
+            </div>
+          </div>
+
+          <!-- Desktop Navigation Links -->
+          <nav class="desktop-nav-links" aria-label="Main Navigation">
+            <a href="#about" class="desktop-nav-link" data-section="about"
+              >About</a
+            >
+            <a href="#skills" class="desktop-nav-link" data-section="skills"
+              >Skills</a
+            >
+            <a
+              href="#experience"
+              class="desktop-nav-link"
+              data-section="experience"
+              >Career</a
+            >
+            <a href="#projects" class="desktop-nav-link" data-section="projects"
+              >Projects</a
+            >
+            <a
+              href="#education"
+              class="desktop-nav-link"
+              data-section="education"
+              >Education</a
+            >
+            <a href="#contact" class="desktop-nav-link" data-section="contact"
+              >Contact</a
+            >
+          </nav>
+
+          <div class="nav-actions">
+            <a href="#contact" class="btn-resume" id="btn-resume-cta">
+              <span>Resume</span>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+            <button
+              class="btn-icon"
+              id="btn-theme-toggle"
+              aria-label="Quick Connect / Action"
+              title="Profile Details"
+            >
+              <i class="fa-regular fa-user"></i>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main Content Area -->
+      <main class="main-content">
+        <!-- HERO & TERMINAL WRAPPER (Responsive 2-Col on Desktop) -->
+        <div class="hero-terminal-wrapper">
+          <!-- HERO SECTION -->
+          <section class="hero-section" id="hero">
+            <!-- Availability Pill -->
+            <div class="status-pill" id="status-badge">
+              <span class="pulse-dot"></span>
+              <span class="status-text">AVAILABLE FOR OPPORTUNITIES</span>
+            </div>
+
+            <!-- Main Hero Intro -->
+            <h1 class="hero-title">Harsh Jaiswar</h1>
+            <h2 class="hero-subtitle">
+              Aspiring Full Stack Developer &amp; B.Sc. IT Student
+            </h2>
+
+            <p class="hero-bio">
+              B.Sc. Information Technology student building real-world web
+              applications, data analytics workflows, and software solutions
+              with modern tech stacks.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="hero-cta-group">
+              <a
+                href="#projects"
+                class="btn btn-primary"
+                id="hero-view-projects"
+              >
+                <i class="fa-solid fa-folder-open"></i>
+                <span>VIEW PROJECTS</span>
+              </a>
+              <a
+                href="#contact"
+                class="btn btn-secondary"
+                id="hero-lets-connect"
+              >
+                <i class="fa-regular fa-comment-dots"></i>
+                <span>LET'S CONNECT</span>
+              </a>
+            </div>
+
+            <!-- Quick Social Links Badges -->
+            <div class="quick-links">
+              <a
+                href="https://github.com/harshjaiswar1928"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="pill-chip"
+                title="GitHub Profile"
+              >
+                <i class="fa-brands fa-github"></i> GH
+              </a>
+              <a
+                href="https://linkedin.com/in/harshjaiswar1928/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="pill-chip"
+                title="LinkedIn Profile"
+              >
+                <i class="fa-brands fa-linkedin"></i> LI
+              </a>
+              <a href="#contact" class="pill-chip" title="Email Direct">
+                <i class="fa-solid fa-envelope"></i> EM
+              </a>
+            </div>
+          </section>
+
+          <!-- TERMINAL / CODE SNIPPET CARD -->
+          <section
+            class="terminal-section"
+            aria-label="Developer Profile Console"
+          >
+            <div class="terminal-card">
+              <div class="terminal-header">
+                <div class="terminal-controls">
+                  <span class="control-dot dot-red"></span>
+                  <span class="control-dot dot-yellow"></span>
+                  <span class="control-dot dot-green"></span>
+                </div>
+                <div class="terminal-title">
+                  <span>zsh &bull; harsh.dev &bull; 8080</span>
+                </div>
+                <button
+                  class="terminal-copy-btn"
+                  id="copy-code-btn"
+                  title="Copy code"
+                  aria-label="Copy code"
+                >
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+              <div class="terminal-body">
+                <pre><code id="code-snippet"><span class="token-keyword">const</span> <span class="token-var">developer</span> = {
+  <span class="token-prop">name</span>: <span class="token-string">"Harsh Jaiswar"</span>,
+  <span class="token-prop">role</span>: <span class="token-string">"Full Stack &amp; Data Enthusiast"</span>,
+  <span class="token-prop">education</span>: <span class="token-string">"B.Sc. Information Technology"</span>,
+  <span class="token-prop">passion</span>: <span class="token-string">"Building Scalable Solutions"</span>,
+  <span class="token-prop">focus</span>: [<span class="token-string">"Modern Web"</span>, <span class="token-string">"Data Analytics"</span>],
+  <span class="token-prop">status</span>: <span class="token-string">"Ready to make an impact"</span>
+};</code></pre>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- ABOUT SECTION -->
+        <section class="section about-section" id="about">
+          <div class="section-title-wrap">
+            <div class="section-icon-badge">
+              <i class="fa-regular fa-id-card"></i>
+            </div>
+            <h2 class="section-title">About</h2>
+          </div>
+
+          <div class="card about-card">
+            <p class="about-summary">
+              I am an undergraduate
+              <strong class="text-highlight">Information Technology</strong>
+              student with a purposeful mindset, combining hands-on computer
+              science principles with hands-on web engineering and analytical
+              curiosity.
+            </p>
+
+            <div class="feature-subcards">
+              <!-- Subcard 1 -->
+              <div class="feature-item">
+                <div class="feature-icon-box icon-green">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="feature-content">
+                  <h3 class="feature-heading">Modern Web Architecture</h3>
+                  <p class="feature-text">
+                    Writing clean, responsive frontend interfaces backed by
+                    structured database persistence.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Subcard 2 -->
+              <div class="feature-item">
+                <div class="feature-icon-box icon-blue">
+                  <i class="fa-solid fa-chart-pie"></i>
+                </div>
+                <div class="feature-content">
+                  <h3 class="feature-heading">Data Analysis &amp; Insights</h3>
+                  <p class="feature-text">
+                    Transforming fragmented datasets into Python
+                    (Pandas/Seaborn), SQL, and Power BI dashboards.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Subcard 3 -->
+              <div class="feature-item">
+                <div class="feature-icon-box icon-orange">
+                  <i class="fa-solid fa-gear"></i>
+                </div>
+                <div class="feature-content">
+                  <h3 class="feature-heading">Foundational Engineering</h3>
+                  <p class="feature-text">
+                    Grounded in C++ &amp; object-oriented logic, ensuring
+                    structured concepts and algorithmic clarity.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- TECHNICAL SKILLS SECTION -->
+        <section class="section skills-section" id="skills">
+          <div class="section-title-wrap">
+            <div class="section-icon-badge">
+              <i class="fa-solid fa-code-fork"></i>
+            </div>
+            <h2 class="section-title">Technical Skills</h2>
+          </div>
+
+          <div class="skills-grid">
+            <!-- Skill Group 1: Programming & Web -->
+            <div class="card skill-card">
+              <div class="skill-group-header">
+                <span class="category-icon-sym">&#8220;&#8221;</span>
+                <h3 class="skill-group-title">Programming &amp; Web</h3>
+              </div>
+              <div class="tag-cloud">
+                <span class="skill-tag">C</span>
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">JavaScript</span>
+              </div>
+            </div>
+
+            <!-- Skill Group 2: Data Analytics & Visualization -->
+            <div class="card skill-card">
+              <div class="skill-group-header">
+                <i class="fa-solid fa-chart-simple text-green"></i>
+                <h3 class="skill-group-title">
+                  Data Analytics &amp; Visualization
+                </h3>
+              </div>
+              <div class="tag-cloud">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Pandas</span>
+                <span class="skill-tag">NumPy</span>
+                <span class="skill-tag">Matplotlib</span>
+                <span class="skill-tag">Seaborn</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">Power BI</span>
+                <span class="skill-tag">MS Excel</span>
+              </div>
+            </div>
+
+            <!-- Skill Group 3: Core Competencies -->
+            <div class="card skill-card">
+              <div class="skill-group-header">
+                <i class="fa-solid fa-cubes text-orange"></i>
+                <h3 class="skill-group-title">Core Competencies</h3>
+              </div>
+              <div class="tag-cloud">
+                <span class="skill-tag">Agile Thinking</span>
+                <span class="skill-tag">OOP Architecture</span>
+                <span class="skill-tag">Relational Databases</span>
+                <span class="skill-tag">Problem Solving</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- WORK EXPERIENCE SECTION -->
+        <section class="section experience-section" id="experience">
+          <div class="section-title-wrap">
+            <div class="section-icon-badge">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <h2 class="section-title">Work Experience</h2>
+          </div>
+
+          <div class="timeline-container">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="card experience-card">
+                <div class="exp-header">
+                  <div>
+                    <h3 class="exp-role">Data Analyst Intern</h3>
+                    <div class="exp-company">
+                      Machine Learning &amp; Analytics
+                    </div>
+                  </div>
+                  <div class="exp-duration">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>Dec 2023 &ndash; Jan 2024</span>
+                  </div>
+                </div>
+
+                <ul class="exp-bullets">
+                  <li>
+                    <i class="fa-solid fa-check-circle"></i>
+                    <span
+                      >Executed structured data cleaning and exploratory data
+                      analysis to synthesize key operational decision
+                      metrics.</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check-circle"></i>
+                    <span
+                      >Implemented clean Python ETL scripts and interactive
+                      dashboards for data visualization and progress
+                      tracking.</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check-circle"></i>
+                    <span
+                      >Assisted stakeholders in commercial data interpretation
+                      and prepared reporting documentation.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FEATURED PROJECTS SECTION -->
+        <section class="section projects-section" id="projects">
+          <div class="section-title-wrap section-header-between">
+            <div class="title-with-icon">
+              <div class="section-icon-badge">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <h2 class="section-title">Featured Projects</h2>
+            </div>
+            <span class="project-count-pill">4 PROJECTS</span>
+          </div>
+
+          <div class="projects-list">
+            <!-- Project Card 1: Sales Performance Dashboard -->
+            <article class="card project-card" data-project-id="1">
+              <div class="project-media-wrap">
+                <img
+                  src="assets/images/project-sales-dashboard.jpg"
+                  alt="Sales Performance Dashboard"
+                  class="project-img"
+                  loading="lazy"
+                />
+                <div class="project-badge-overlay">
+                  <i class="fa-solid fa-chart-line"></i> BI Analytics
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-category-row">
+                  <span class="proj-cat-tag">POWER BI</span>
+                  <span class="bullet-sep">&bull;</span>
+                  <span class="proj-cat-tag">EXCEL</span>
+                  <span class="bullet-sep">&bull;</span>
+                  <span class="proj-cat-tag">DATA ANALYTICS</span>
+                </div>
+                <h3 class="project-title">Sales Performance Dashboard</h3>
+                <p class="project-description">
+                  Interactive sales monitoring dashboard tracking monthly KPIs,
+                  regional distribution patterns, and customer conversion rates
+                  for strategic evaluation.
+                </p>
+                <div class="project-tech-tags">
+                  <span class="tech-pill">Power BI</span>
+                  <span class="tech-pill">Excel</span>
+                  <span class="tech-pill">Data Analytics</span>
+                </div>
+                <div class="project-footer-actions">
+                  <a
+                    href="https://github.com/harshjaiswar1928"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn-link"
+                    title="View Source Code"
+                  >
+                    <i class="fa-brands fa-github"></i> Code
+                  </a>
+                  <a
+                    href="#contact"
+                    class="btn-link"
+                    title="Request Project Demo"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project Card 2: MySQL Data Analysis Suite -->
+            <article class="card project-card" data-project-id="2">
+              <div class="project-media-wrap">
+                <img
+                  src="assets/images/project-mysql-suite.jpg"
+                  alt="MySQL Data Analysis Suite"
+                  class="project-img"
+                  loading="lazy"
+                />
+                <div class="project-badge-overlay">
+                  <i class="fa-solid fa-database"></i> Database Suite
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-category-row">
+                  <span class="proj-cat-tag">SQL</span>
+                  <span class="bullet-sep">&bull;</span>
+                  <span class="proj-cat-tag">MYSQL</span>
+                  <span class="bullet-sep">&bull;</span>
+                  <span class="proj-cat-tag">DATABASE DESIGN</span>
+                </div>
+                <h3 class="project-title">MySQL Data Analysis Suite</h3>
+                <p class="project-description">
+                  Normalized database schema design and comprehensive relational
+                  query collection optimized for sales transactions, user
+                  telemetry, and BI data extraction.
+                </p>
+                <div class="project-tech-tags">
+                  <span class="tech-pill">MySQL</span>
+                  <span class="tech-pill">SQL</span>
+                  <span class="tech-pill">Database Design</span>
+                </div>
+                <div class="project-footer-actions">
+                  <a
+                    href="https://github.com/harshjaiswar1928"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn-link"
+                    title="View Source Code"
+                  >
+                    <i class="fa-brands fa-github"></i> Code
+                  </a>
+                  <a
+                    href="#contact"
+                    class="btn-link"
+                    title="Request Project Demo"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project Card 3: Gym Management System -->
+            <article class="card project-card" data-project-id="3">
+              <div class="project-media-wrap">
+                <img
+                  src="assets/images/project-gym-system.jpg"
+                  alt="Gym Management System"
+                  class="project-img"
+                  loading="lazy"
+                />
+                <div class="project-badge-overlay">
+                  <i class="fa-solid fa-terminal"></i> C++ Engine
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-category-row">
+                  <span class="proj-cat-tag">C++</span>
+                  <span class="bullet-sep">&bull;</span>
+                  <span class="proj-cat-tag">CPP ENGINE</span>
+                  <span class="bullet-sep">&bull;</span>
+                  <span class="proj-cat-tag">CONSOLE APP</span>
+                </div>
+                <h3 class="project-title">Gym Management System</h3>
+                <p class="project-description">
+                  Robust command-line application built with C++ implementing
+                  object-oriented concepts to manage member records,
+                  subscription plans, and fee transactions.
+                </p>
+                <div class="project-tech-tags">
+                  <span class="tech-pill">C++</span>
+                  <span class="tech-pill">OOP</span>
+                  <span class="tech-pill">File Handling</span>
+                </div>
+                <div class="project-footer-actions">
+                  <a
+                    href="https://github.com/harshjaiswar1928"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn-link"
+                    title="View Source Code"
+                  >
+                    <i class="fa-brands fa-github"></i> Code
+                  </a>
+                  <a
+                    href="#contact"
+                    class="btn-link"
+                    title="Request Project Demo"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project Card 4: FreshMart – Online Grocery Interface -->
+            <article class="card project-card" data-project-id="4">
+              <div class="project-media-wrap">
+                <img
+                  src="assets/images/project-freshmart.jpg"
+                  alt="FreshMart Online Grocery Interface"
+                  class="project-img"
+                  loading="lazy"
+                />
+                <div class="project-badge-overlay">
+                  <i class="fa-solid fa-bag-shopping"></i> Web Frontend
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-category-row">
+                  <span class="proj-cat-tag">HTML</span>
+                  <span class="bullet-sep">&bull;</span>
+                  <span class="proj-cat-tag">CSS</span>
+                  <span class="bullet-sep">&bull;</span>
+                  <span class="proj-cat-tag">WEB DESIGN</span>
+                </div>
+                <h3 class="project-title">
+                  FreshMart &ndash; Online Grocery Interface
+                </h3>
+                <p class="project-description">
+                  Sleek, responsive e-commerce web interface featuring intuitive
+                  product catalog browsing, shopping cart state management, and
+                  express checkout simulation.
+                </p>
+                <div class="project-tech-tags">
+                  <span class="tech-pill">HTML5</span>
+                  <span class="tech-pill">CSS3</span>
+                  <span class="tech-pill">JavaScript</span>
+                  <span class="tech-pill">UI/UX</span>
+                </div>
+                <div class="project-footer-actions">
+                  <a
+                    href="https://github.com/harshjaiswar1928"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn-link"
+                    title="View Source Code"
+                  >
+                    <i class="fa-brands fa-github"></i> Code
+                  </a>
+                  <a
+                    href="#contact"
+                    class="btn-link"
+                    title="Request Project Demo"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- EDUCATION & CREDENTIALS SECTION -->
+        <section class="section education-section" id="education">
+          <div class="section-title-wrap">
+            <div class="section-icon-badge">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <h2 class="section-title">Education &amp; Credentials</h2>
+          </div>
+
+          <div class="education-stack">
+            <!-- Degree 1 -->
+            <div class="card edu-card active-program">
+              <div class="edu-top-row">
+                <span class="badge-status badge-enrolled"
+                  >Currently Enrolled</span
+                >
+                <span class="edu-period">2023 &ndash; 2026</span>
+              </div>
+              <h3 class="edu-degree">B.Sc. Information Technology</h3>
+              <p class="edu-institution">
+                Sant Gadge Baba Amravati University Affiliated College
+              </p>
+            </div>
+
+            <!-- Degree 2: HSC -->
+            <div class="card edu-card">
+              <div class="edu-top-row">
+                <span class="badge-status badge-completed">Completed</span>
+                <span class="edu-period">2023</span>
+              </div>
+              <h3 class="edu-degree">HSC (Science)</h3>
+              <p class="edu-institution">Maharashtra State Board</p>
+            </div>
+
+            <!-- Degree 3: SSC -->
+            <div class="card edu-card">
+              <div class="edu-top-row">
+                <span class="badge-status badge-completed">Completed</span>
+                <span class="edu-period">2021</span>
+              </div>
+              <h3 class="edu-degree">SSC</h3>
+              <p class="edu-institution">Maharashtra State Board</p>
+            </div>
+
+            <!-- Certification Card: Microsoft SC-900 -->
+            <div class="card cert-card">
+              <div class="cert-icon-wrap">
+                <div class="cert-shield-icon">
+                  <i class="fa-brands fa-microsoft"></i>
+                </div>
+              </div>
+              <div class="cert-content">
+                <div class="cert-badge-tag">OFFICIAL CERTIFICATION</div>
+                <h3 class="cert-title">
+                  Microsoft Certified: Security, Compliance, and Identity
+                  Fundamentals (SC-900)
+                </h3>
+                <p class="cert-description">
+                  Foundational credential validating enterprise cloud security
+                  principles, compliance controls, and identity governance.
+                </p>
+                <div class="cert-action-row">
+                  <span class="cert-status-tag"
+                    ><i class="fa-solid fa-circle-check"></i> Verified
+                    Credential</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- LET'S CONNECT SECTION -->
+        <section class="section connect-section" id="contact">
+          <div class="section-title-wrap">
+            <div class="section-icon-badge">
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h2 class="section-title">Let's Connect</h2>
+          </div>
+
+          <div class="card connect-card">
+            <div class="connect-info-col">
+              <h3 class="connect-title">Let's build something useful.</h3>
+              <p class="connect-description">
+                Always open to discussing software projects, internship
+                opportunities, and technical collaboration.
+              </p>
+
+              <!-- Spoken Languages Row -->
+              <div class="languages-row">
+                <span class="languages-label">Languages spoken:</span>
+                <div class="languages-tags">
+                  <span class="lang-tag">English</span>
+                  <span class="lang-tag">Hindi (Native)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-links-list">
+              <!-- Email Row with Copy to Clipboard -->
+              <div
+                class="contact-row"
+                id="contact-email-row"
+                data-copy-val="harshjaiswar1928@gmail.com"
+                title="Click to copy email"
+              >
+                <div class="contact-row-left">
+                  <div class="contact-icon email-icon">
+                    <i class="fa-regular fa-envelope"></i>
+                  </div>
+                  <span class="contact-row-text"
+                    >harshjaiswar1928@gmail.com</span
+                  >
+                </div>
+                <button
+                  class="contact-row-action"
+                  aria-label="Copy Email"
+                  title="Copy Email"
+                >
+                  <i class="fa-regular fa-clone"></i>
+                </button>
+              </div>
+
+              <!-- LinkedIn Row -->
+              <a
+                href="https://linkedin.com/in/harshjaiswar1928/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-row"
+                title="Open LinkedIn Profile"
+              >
+                <div class="contact-row-left">
+                  <div class="contact-icon linkedin-icon">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </div>
+                  <span class="contact-row-text"
+                    >linkedin.com/in/harshjaiswar1928/</span
+                  >
+                </div>
+                <div class="contact-row-action">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+              </a>
+
+              <!-- GitHub Row -->
+              <a
+                href="https://github.com/harshjaiswar1928"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-row"
+                title="Open GitHub Profile"
+              >
+                <div class="contact-row-left">
+                  <div class="contact-icon github-icon">
+                    <i class="fa-brands fa-github"></i>
+                  </div>
+                  <span class="contact-row-text"
+                    >github.com/harshjaiswar1928</span
+                  >
+                </div>
+                <div class="contact-row-action">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="site-footer">
+          <div class="footer-socials">
+            <a
+              href="https://github.com/harshjaiswar1928"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="https://linkedin.com/in/harshjaiswar1928/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="mailto:harshjaiswar1928@gmail.com" aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <button
+              id="btn-back-to-top"
+              class="footer-scroll-top"
+              title="Back to top"
+              aria-label="Back to top"
+            >
+              <i class="fa-solid fa-arrow-up"></i>
+            </button>
+          </div>
+          <p class="footer-copyright">
+            &copy; 2025 HARSH JAISWAR &bull; BUILT WITH MODERN WEB STANDARDS.
+            ALL RIGHTS RESERVED.
+          </p>
+        </footer>
+      </main>
+
+      <!-- FLOATING BOTTOM DOCK NAVIGATION (MOBILE & DESKTOP) -->
+      <nav class="bottom-dock" aria-label="Quick Section Navigation">
+        <div class="dock-container">
+          <a
+            href="#about"
+            class="dock-item"
+            data-section="about"
+            title="About Me"
+          >
+            <i class="fa-regular fa-user"></i>
+            <span>About</span>
+          </a>
+          <a
+            href="#skills"
+            class="dock-item"
+            data-section="skills"
+            title="Technical Skills"
+          >
+            <i class="fa-solid fa-code"></i>
+            <span>Skills</span>
+          </a>
+          <a
+            href="#projects"
+            class="dock-item"
+            data-section="projects"
+            title="Featured Projects"
+          >
+            <i class="fa-solid fa-layer-group"></i>
+            <span>Projects</span>
+          </a>
+          <a
+            href="#experience"
+            class="dock-item"
+            data-section="experience"
+            title="Work Experience"
+          >
+            <i class="fa-solid fa-briefcase"></i>
+            <span>Career</span>
+          </a>
+          <a
+            href="#contact"
+            class="dock-item"
+            data-section="contact"
+            title="Connect"
+          >
+            <i class="fa-regular fa-envelope"></i>
+            <span>Contact</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Project Lightbox / Modal for detailed preview -->
+    <div
+      class="modal-overlay"
+      id="project-modal"
+      aria-hidden="true"
+      role="dialog"
+    >
+      <div class="modal-container">
+        <button
+          class="modal-close-btn"
+          id="modal-close"
+          aria-label="Close modal"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="modal-content" id="modal-body">
+          <!-- Injected via JavaScript -->
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
