@@ -206,6 +206,7 @@ img {
   height: 100%;
   border-radius: var(--radius-full);
   object-fit: cover;
+  object-position: center 20%;
   background-color: var(--bg-card);
 }
 
